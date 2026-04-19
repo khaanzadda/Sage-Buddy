@@ -1,8 +1,13 @@
 import { Link } from "react-router-dom";
 import { SectionHeading } from "../components/SectionHeading";
 import { services } from "../data/siteData";
+import { BusinessSolutionsPage } from "./BusinessSolutionsPage";
 
 export function BasicPage({ page }) {
+  if (page.path === "/business-solutions") {
+    return <BusinessSolutionsPage />;
+  }
+
   return (
     <section className="inner-page">
       <div className="container inner-page-grid">
