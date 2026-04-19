@@ -116,6 +116,7 @@ a {
 .navbar-inner {
   min-height: 82px;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -843,6 +844,17 @@ a {
   color: #23233f;
 }
 
+@media (max-width: 1200px) {
+  .business-showcase-row {
+    gap: 42px;
+  }
+
+  .business-showcase-copy,
+  .business-closing-copy {
+    max-width: 100%;
+  }
+}
+
 .page-sidebar {
   background: #fff;
   border: 1px solid var(--color-border);
@@ -941,7 +953,6 @@ a {
     display: none;
   }
 
-  .navbar-inner,
   .about-grid,
   .stats-grid,
   .inner-page-grid,
@@ -950,18 +961,24 @@ a {
   }
 
   .navbar-inner {
-    padding: 18px 0;
+    min-height: auto;
+    padding: 18px 0 22px;
+    justify-content: center;
+    flex-direction: column;
   }
 
   .primary-nav {
+    width: 100%;
     flex-wrap: wrap;
     justify-content: center;
     gap: 14px;
+    text-align: center;
   }
 
   .auth-actions {
     width: 100%;
     justify-content: center;
+    flex-wrap: wrap;
   }
 
   .services-grid {
@@ -988,19 +1005,50 @@ a {
     gap: 32px;
     padding: 30px 0;
   }
+
+  .business-showcase-row.media-right .business-showcase-media,
+  .business-showcase-row.media-right .business-showcase-copy {
+    order: initial;
+  }
+
+  .business-showcase-media {
+    min-height: auto;
+  }
+
+  .business-media-frame {
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  .business-showcase-copy {
+    max-width: 520px;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 640px) {
+  :root {
+    --container: min(100vw - 24px, 1180px);
+  }
+
   .navbar-inner {
     gap: 18px;
   }
 
   .logo {
     min-width: unset;
+    width: 100%;
+    justify-content: center;
   }
 
   .logo strong {
     font-size: 1.6rem;
+  }
+
+  .logo small {
+    letter-spacing: 0.12em;
+    font-size: 0.62rem;
   }
 
   .hero-section {
@@ -1023,6 +1071,21 @@ a {
     padding: 76px 0 58px;
   }
 
+  .business-hero-copy h1 {
+    max-width: 300px;
+    font-size: clamp(1.85rem, 9vw, 2.8rem);
+  }
+
+  .business-hero-copy p,
+  .business-showcase-copy p,
+  .business-closing-copy p,
+  .business-feature-card p,
+  .body-copy,
+  .section-heading p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
   .business-media-frame {
     width: 100%;
   }
@@ -1036,6 +1099,34 @@ a {
     height: 92px;
     right: 8px;
     bottom: -12px;
+  }
+
+  .business-showcase-copy h2,
+  .business-closing-copy h2 {
+    font-size: clamp(1.65rem, 8vw, 2.25rem);
+  }
+
+  .business-closing {
+    gap: 28px;
+    padding-top: 20px;
+  }
+
+  .business-feature-card {
+    padding: 20px 18px;
+  }
+
+  .primary-nav a {
+    width: 100%;
+  }
+
+  .auth-actions .button,
+  .auth-actions .text-link {
+    width: 100%;
+  }
+
+  .button {
+    width: 100%;
+    min-height: 48px;
   }
 
   .about-collage {
@@ -1071,5 +1162,81 @@ a {
 
   .stat-right {
     right: 0;
+  }
+}
+
+@media (max-width: 420px) {
+  :root {
+    --container: min(100vw - 20px, 1180px);
+  }
+
+  .social-list {
+    gap: 8px;
+  }
+
+  .social-list a {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+  }
+
+  .hero-copy h1,
+  .section-heading h2,
+  .inner-page h1 {
+    font-size: clamp(2rem, 11vw, 2.6rem);
+  }
+
+  .service-card {
+    padding: 30px 22px;
+    border-radius: 24px;
+  }
+
+  .service-card h3 {
+    font-size: 1.55rem;
+  }
+
+  .metric-ring {
+    inset: 54px 10px 30px;
+  }
+
+  .metric {
+    width: 102px;
+    height: 102px;
+  }
+
+  .metric strong {
+    font-size: 2.2rem;
+  }
+
+  .metric span {
+    font-size: 1rem;
+  }
+
+  .illustration-window {
+    left: 26%;
+    width: 180px;
+    height: 130px;
+  }
+
+  .illustration-rocket {
+    left: 58%;
+    font-size: 3.8rem;
+  }
+
+  .illustration-bars {
+    left: 42%;
+    width: 118px;
+    height: 88px;
+    padding: 14px;
+  }
+
+  .illustration-desk {
+    width: 100%;
+  }
+
+  .person-body {
+    width: 132px;
+    height: 138px;
   }
 }
