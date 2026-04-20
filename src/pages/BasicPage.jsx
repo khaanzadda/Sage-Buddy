@@ -2,10 +2,15 @@ import { Link } from "react-router-dom";
 import { SectionHeading } from "../components/SectionHeading";
 import { services } from "../data/siteData";
 import { BusinessSolutionsPage } from "./BusinessSolutionsPage";
+import { ContactPage } from "./ContactPage";
 import { OurTeamPage } from "./OurTeamPage";
 import { SuccessStoriesPage } from "./SuccessStoriesPage";
 
 export function BasicPage({ page }) {
+  if (page.path === "/contact") {
+    return <ContactPage />;
+  }
+
   if (page.path === "/our-team") {
     return <OurTeamPage />;
   }

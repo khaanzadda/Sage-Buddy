@@ -384,6 +384,25 @@ export const ourTeamPage = {
   ],
 };
 
+export const contactPage = {
+  title: "Contact Us",
+  subtitle: "Home / Contact Us",
+  eyebrow: "Contact Us",
+  heading: "Grow your business with SageBuddy We have to change this text.",
+  infoCards: [
+    {
+      title: "Location",
+      text: "Office No. 5, 5th Floor, Rehman Plaza, Sargodha",
+      icon: "⌖",
+    },
+    {
+      title: "Make a Call",
+      text: "048 376 8719",
+      icon: "☎",
+    },
+  ],
+};
+
 export const testimonial = {
   quote:
     "Ashamed no inhabit ferrars it ye besides resolve. Own judgment directly few trifling. Elderly as pursuit at regular do parlors.",
