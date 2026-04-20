@@ -39,6 +39,15 @@ export const routeConfig = [
     showInNav: true,
   },
   {
+    path: "/our-team",
+    label: "Our Team",
+    title: "Our Team",
+    eyebrow: "Company",
+    description:
+      "Meet the people behind SageBuddy.",
+    showInNav: false,
+  },
+  {
     path: "/login",
     label: "Login",
     title: "Login",
@@ -302,6 +311,79 @@ export const successStoriesPage = {
   ],
 };
 
+export const ourTeamPage = {
+  title: "Team Members",
+  subtitle: "Home / Team Members",
+  members: [
+    {
+      name: "Iftikhar Ali",
+      role: "Full Stack Developer",
+      image:
+        "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=420&q=80",
+      socials: [
+        { label: "Facebook", short: "f", href: "#" },
+        { label: "Twitter", short: "t", href: "#" },
+        { label: "LinkedIn", short: "in", href: "#" },
+      ],
+    },
+    {
+      name: "Ammar Wasif",
+      role: "UI/UX Designer",
+      image:
+        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=420&q=80",
+      socials: [
+        { label: "Facebook", short: "f", href: "#" },
+        { label: "Twitter", short: "t", href: "#" },
+        { label: "LinkedIn", short: "in", href: "#" },
+      ],
+    },
+    {
+      name: "Muhammad Qasim",
+      role: "Front End Developer",
+      image:
+        "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=420&q=80",
+      socials: [
+        { label: "Facebook", short: "f", href: "#" },
+        { label: "Twitter", short: "t", href: "#" },
+        { label: "LinkedIn", short: "in", href: "#" },
+      ],
+    },
+    {
+      name: "Iftikhar Ali",
+      role: "Full Stack Developer",
+      image:
+        "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=420&q=80",
+      socials: [
+        { label: "Facebook", short: "f", href: "#" },
+        { label: "Twitter", short: "t", href: "#" },
+        { label: "LinkedIn", short: "in", href: "#" },
+      ],
+    },
+    {
+      name: "Ammar Wasif",
+      role: "UI/UX Designer",
+      image:
+        "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?auto=format&fit=crop&w=420&q=80",
+      socials: [
+        { label: "Facebook", short: "f", href: "#" },
+        { label: "Twitter", short: "t", href: "#" },
+        { label: "LinkedIn", short: "in", href: "#" },
+      ],
+    },
+    {
+      name: "Muhammad Qasim",
+      role: "Front End Developer",
+      image:
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=420&q=80",
+      socials: [
+        { label: "Facebook", short: "f", href: "#" },
+        { label: "Twitter", short: "t", href: "#" },
+        { label: "LinkedIn", short: "in", href: "#" },
+      ],
+    },
+  ],
+};
+
 export const testimonial = {
   quote:
     "Ashamed no inhabit ferrars it ye besides resolve. Own judgment directly few trifling. Elderly as pursuit at regular do parlors.",
@@ -326,7 +408,7 @@ export const footerGroups = [
     title: "Company",
     links: [
       { label: "About Us", href: "/success-stories" },
-      { label: "Our Team", href: "/success-stories" },
+      { label: "Our Team", href: "/our-team" },
       { label: "Contact Us", href: "/contact" },
     ],
   },
