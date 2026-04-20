@@ -2,8 +2,13 @@ import { Link } from "react-router-dom";
 import { SectionHeading } from "../components/SectionHeading";
 import { services } from "../data/siteData";
 import { BusinessSolutionsPage } from "./BusinessSolutionsPage";
+import { SuccessStoriesPage } from "./SuccessStoriesPage";
 
 export function BasicPage({ page }) {
+  if (page.path === "/success-stories") {
+    return <SuccessStoriesPage />;
+  }
+
   if (page.path === "/business-solutions") {
     return <BusinessSolutionsPage />;
   }

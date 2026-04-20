@@ -223,6 +223,85 @@ export const businessSolutionsPage = {
   },
 };
 
+export const successStoriesPage = {
+  title: "Success Stories",
+  subtitle: "Home / Success Stories",
+  stories: [
+    {
+      name: "Affan Ali",
+      role: "Retail Owner",
+      rating: 5,
+      quote:
+        "Our sales and stock flow became much easier after SageBuddy. It helped us manage daily work with less effort and more confidence.",
+      image:
+        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=180&q=80",
+    },
+    {
+      name: "Ahmad Ali",
+      role: "Wholesale Manager",
+      rating: 5,
+      quote:
+        "The system is simple for our staff and accurate for reporting. We can track customers, invoices, and products without confusion.",
+      image:
+        "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=180&q=80",
+    },
+    {
+      name: "Zeeshan Iqbal",
+      role: "Store Manager",
+      rating: 5,
+      quote:
+        "SageBuddy made our counter process faster. Quotes, payments, and inventory updates now feel organized from one place.",
+      image:
+        "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=180&q=80",
+    },
+    {
+      name: "Asif Raza",
+      role: "Business Owner",
+      rating: 5,
+      quote:
+        "We needed software that was easy to understand and flexible for our product units. SageBuddy matched our daily workflow very well.",
+      image:
+        "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?auto=format&fit=crop&w=180&q=80",
+    },
+    {
+      name: "Affan Ali",
+      role: "Operations Lead",
+      rating: 5,
+      quote:
+        "Stock visibility and sales handling improved quickly. The interface is friendly and our team adopted it without a long learning curve.",
+      image:
+        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=180&q=80",
+    },
+    {
+      name: "Junaid Khan",
+      role: "Pharmacy Owner",
+      rating: 5,
+      quote:
+        "The reporting and customer balance tracking are especially helpful. We spend less time checking records manually now.",
+      image:
+        "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=180&q=80",
+    },
+    {
+      name: "Bilal Ahmed",
+      role: "Retail Partner",
+      rating: 5,
+      quote:
+        "SageBuddy gives us the information we need for sales, purchases, and stock decisions. It is clear, quick, and practical.",
+      image:
+        "https://images.unsplash.com/photo-1530268729831-4b0b9e170218?auto=format&fit=crop&w=180&q=80",
+    },
+    {
+      name: "Usman Hayat",
+      role: "Factory Admin",
+      rating: 5,
+      quote:
+        "We can manage quotations and payment records with much better discipline. It reduced repeated work across our team.",
+      image:
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=180&q=80",
+    },
+  ],
+};
+
 export const testimonial = {
   quote:
     "Ashamed no inhabit ferrars it ye besides resolve. Own judgment directly few trifling. Elderly as pursuit at regular do parlors.",
