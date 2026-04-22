@@ -629,6 +629,7 @@ a {
 
 .business-page {
   background: #fff;
+  overflow-x: hidden;
 }
 
 .business-hero {
@@ -779,16 +780,19 @@ a {
 
 .business-bullet-list li {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 10px;
   color: #2d3150;
   font-weight: 600;
+  line-height: 1.45;
 }
 
 .business-bullet-list li::before {
   content: "";
+  flex: 0 0 11px;
   width: 11px;
   height: 11px;
+  margin-top: 0.32em;
   border-radius: 50%;
   background: #0db389;
   box-shadow: 0 0 0 5px rgba(13, 179, 137, 0.14);
@@ -1392,6 +1396,7 @@ a {
 
   .business-hero {
     min-height: 430px;
+    background-position: 58% center;
   }
 
   .business-showcase-row {
@@ -1417,6 +1422,10 @@ a {
   .business-showcase-copy {
     max-width: 520px;
     margin: 0 auto;
+  }
+
+  .business-closing-copy {
+    max-width: 520px;
   }
 }
 
@@ -1455,18 +1464,33 @@ a {
   .about-section,
   .solutions-section,
   .testimonial-section,
-  .inner-page,
-  .business-content-shell {
+  .inner-page {
     padding: 78px 0;
   }
 
+  .business-content-shell {
+    padding: 44px 0 64px;
+  }
+
+  .business-hero {
+    min-height: auto;
+    align-items: flex-end;
+    background-position: 62% center;
+  }
+
   .business-hero-copy {
-    padding: 76px 0 58px;
+    width: 100%;
+    padding: 88px 0 54px;
   }
 
   .business-hero-copy h1 {
-    max-width: 300px;
+    max-width: 340px;
     font-size: clamp(1.85rem, 9vw, 2.8rem);
+    line-height: 1.02;
+  }
+
+  .business-hero-copy p {
+    max-width: 100%;
   }
 
   .business-hero-copy p,
@@ -1479,33 +1503,61 @@ a {
     line-height: 1.7;
   }
 
+  .business-showcase-row {
+    gap: 24px;
+    padding: 26px 0;
+  }
+
   .business-media-frame {
     width: 100%;
+    border-radius: 14px;
   }
 
   .business-media-frame img {
-    height: 220px;
+    height: auto;
+    aspect-ratio: 16 / 10;
   }
 
   .business-media-overlay {
-    width: 120px;
-    height: 92px;
+    width: min(34vw, 126px);
+    height: auto;
+    aspect-ratio: 4 / 3;
+    border-width: 4px;
     right: 8px;
-    bottom: -12px;
+    bottom: 8px;
+    border-radius: 12px;
+  }
+
+  .business-showcase-copy,
+  .business-closing-copy {
+    width: 100%;
+    max-width: none;
+  }
+
+  .business-kicker {
+    font-size: 0.68rem;
+    overflow-wrap: anywhere;
   }
 
   .business-showcase-copy h2,
   .business-closing-copy h2 {
     font-size: clamp(1.65rem, 8vw, 2.25rem);
+    letter-spacing: -0.02em;
+    overflow-wrap: anywhere;
   }
 
   .business-closing {
     gap: 28px;
-    padding-top: 20px;
+    padding-top: 18px;
+  }
+
+  .business-closing-grid {
+    gap: 14px;
   }
 
   .business-feature-card {
     padding: 20px 18px;
+    border-radius: 14px;
   }
 
   .success-title-band {
@@ -1574,6 +1626,8 @@ a {
   .button {
     width: 100%;
     min-height: 48px;
+    padding-inline: 18px;
+    text-align: center;
   }
 
   .about-collage {
@@ -1710,5 +1764,26 @@ a {
   .contact-info-card {
     grid-template-columns: 28px 1fr;
     padding: 22px 18px;
+  }
+
+  .business-hero-copy {
+    padding: 72px 0 46px;
+  }
+
+  .business-hero-copy h1 {
+    max-width: 290px;
+    font-size: clamp(1.75rem, 10vw, 2.25rem);
+  }
+
+  .business-showcase-row {
+    padding: 22px 0;
+  }
+
+  .business-media-overlay {
+    width: min(38vw, 112px);
+  }
+
+  .business-feature-card h4 {
+    font-size: 1rem;
   }
 }
