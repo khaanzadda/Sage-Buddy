@@ -38,7 +38,8 @@ export function Footer() {
           </div>
         ))}
       </div>
-      <div className="footer-bottom">Copyright 2021 - SageBuddy.com</div>
+      <div className="footer-bottom">Developed by Khanzada</div>
+
     </footer>
   );
 }
