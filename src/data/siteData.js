@@ -65,6 +65,165 @@ export const routeConfig = [
       "Add your onboarding flow here while reusing the same typography, spacing, and footer.",
     showInNav: false,
   },
+  {
+    path: "/terms-and-conditions",
+    label: "Terms & Conditions",
+    title: "Terms & Conditions",
+    eyebrow: "Legal",
+    description:
+      "Please read these terms carefully before using SageBuddy.",
+    showInNav: false,
+    sections: [
+      {
+        title: "Introduction",
+        paragraphs: [
+          "These Terms & Conditions explain how you may use SageBuddy, a SaaS ERP platform for accounting, inventory management, sales and purchase management, and HR and employee management.",
+          "By creating an account or using SageBuddy, you agree to follow these terms. If you do not agree, please do not use the service.",
+        ],
+      },
+      {
+        title: "User Responsibilities",
+        paragraphs: [
+          "You are responsible for entering correct business, employee, product, sales, purchase, and accounting information into SageBuddy.",
+          "You must use the platform for lawful business purposes only and must not misuse, copy, damage, or interfere with the service.",
+        ],
+      },
+      {
+        title: "Account Usage Rules",
+        paragraphs: [
+          "You are responsible for keeping your login details safe. Any activity done from your account may be treated as your responsibility.",
+          "You should create user access carefully for your staff and give permissions only to the people who need them for their work.",
+        ],
+      },
+      {
+        title: "Subscription & Payment Terms",
+        paragraphs: [
+          "SageBuddy may be provided through monthly, yearly, or custom subscription plans. Your access depends on the plan selected and the payment status of your account.",
+          "Subscription fees must be paid on time. If payment is delayed or not received, we may pause or limit access to the service until payment is cleared.",
+        ],
+      },
+      {
+        title: "Data Usage",
+        paragraphs: [
+          "SageBuddy uses your business data to provide ERP features such as reports, invoices, inventory records, account balances, employee records, and related system functions.",
+          "We do not sell your business data. We may use limited technical and usage information to improve performance, security, and customer support.",
+        ],
+      },
+      {
+        title: "Service Availability",
+        paragraphs: [
+          "We work to keep SageBuddy available and reliable, but no online software can be guaranteed to run without interruption at all times.",
+          "Maintenance, internet issues, hosting problems, updates, or unexpected technical faults may affect access for a limited time.",
+        ],
+      },
+      {
+        title: "Termination Policy",
+        paragraphs: [
+          "You may stop using SageBuddy at any time. Some subscription payments may not be refundable unless agreed separately in writing.",
+          "We may suspend or terminate access if an account is used for illegal activity, repeated non-payment, security abuse, or violation of these terms.",
+        ],
+      },
+      {
+        title: "Limitation of Liability",
+        paragraphs: [
+          "SageBuddy is provided to support business operations, but you remain responsible for reviewing your records, reports, tax information, salaries, stock, and financial decisions.",
+          "To the maximum extent allowed by law, SageBuddy will not be responsible for indirect losses, loss of profit, business interruption, or decisions made using information entered into the platform.",
+        ],
+      },
+    ],
+  },
+  {
+    path: "/privacy-policy",
+    label: "Privacy Policy",
+    title: "Privacy Policy",
+    eyebrow: "Legal",
+    description:
+      "This policy explains how SageBuddy collects, uses, and protects your information.",
+    showInNav: false,
+    sections: [
+      {
+        title: "What Data We Collect",
+        paragraphs: [
+          "We may collect basic account information such as your name, email address, phone number, company name, and login details.",
+          "We may also collect usage data, including pages used, features accessed, device information, browser type, IP address, and error logs.",
+        ],
+      },
+      {
+        title: "How We Use Data",
+        paragraphs: [
+          "We use your data to create and manage your account, provide ERP features, process support requests, improve the platform, and keep the service secure.",
+          "We may use contact information to send important account messages, payment reminders, service updates, and support communication.",
+        ],
+      },
+      {
+        title: "Data Protection & Security",
+        paragraphs: [
+          "We take reasonable steps to protect your information from unauthorized access, loss, misuse, or change.",
+          "Access to business data should also be managed by your own admin users through strong passwords and careful staff permissions.",
+        ],
+      },
+      {
+        title: "Cookies Usage",
+        paragraphs: [
+          "SageBuddy may use cookies or similar technologies to keep you logged in, remember preferences, improve performance, and understand how users interact with the platform.",
+          "You can control cookies through your browser settings, but some features may not work properly if cookies are disabled.",
+        ],
+      },
+      {
+        title: "Third-Party Services",
+        paragraphs: [
+          "We may use trusted third-party services for hosting, analytics, payment processing, email delivery, backups, or customer support.",
+          "These providers may process limited information only as needed to help us operate SageBuddy.",
+        ],
+      },
+      {
+        title: "User Rights",
+        paragraphs: [
+          "You may request access to your personal data, ask for corrections, or request deletion of data where allowed by law and business record requirements.",
+          "To make a request, contact SageBuddy support using the official contact details provided on the website.",
+        ],
+      },
+    ],
+  },
+  {
+    path: "/disclaimer",
+    label: "Disclaimer",
+    title: "Disclaimer",
+    eyebrow: "Legal",
+    description:
+      "This disclaimer explains the limits of using SageBuddy and its business information.",
+    showInNav: false,
+    sections: [
+      {
+        title: "General Disclaimer",
+        paragraphs: [
+          "SageBuddy is a software platform designed to help businesses manage accounting, inventory, sales, purchases, HR, and employee records.",
+          "The software depends on the information entered by you and your users. Incorrect or incomplete data may lead to incorrect reports or results.",
+        ],
+      },
+      {
+        title: "No Financial or Legal Advice",
+        paragraphs: [
+          "SageBuddy provides tools and reports for business management, but it does not provide financial, tax, legal, or audit advice.",
+          "You should consult a qualified accountant, tax advisor, lawyer, or relevant professional before making important financial or legal decisions.",
+        ],
+      },
+      {
+        title: "Accuracy Not Guaranteed",
+        paragraphs: [
+          "We work to make SageBuddy accurate and reliable, but we do not guarantee that every report, calculation, stock value, salary record, or account balance will always be error-free.",
+          "Users should review important information before submitting tax documents, making payments, placing orders, or taking business decisions.",
+        ],
+      },
+      {
+        title: "Limitation of Responsibility",
+        paragraphs: [
+          "SageBuddy and its team will not be responsible for losses caused by wrong data entry, user mistakes, internet issues, third-party service failures, or decisions made using system reports without proper review.",
+          "Your use of SageBuddy is at your own responsibility, and you should keep suitable backups and internal checks for important business records.",
+        ],
+      },
+    ],
+  },
 ];
 
 export const socialLinks = [
@@ -414,13 +573,10 @@ export const testimonial = {
 
 export const footerGroups = [
   {
-    title: "Business Solutions",
+    title: "Digital Solutions",
     links: [
-      { label: "Accounting Software", href: "/business-solutions" },
-      { label: "Kinnow Factory ERP", href: "/business-solutions" },
-      { label: "Point of Sales", href: "/business-solutions" },
-      { label: "Whole Sale", href: "/business-solutions" },
-      { label: "Online Accounting", href: "/business-solutions" },
+      { label: "Business Solution", href: "/business-solutions" },
+      { label: "Success Stories", href: "/success-stories" },
     ],
   },
   {
@@ -434,9 +590,9 @@ export const footerGroups = [
   {
     title: "Other Links",
     links: [
-      { label: "Terms & Conditions", href: "#" , external: true},
-      { label: "Privacy Policy", href: "#", external: true },
-      { label: "Disclaimer", href: "#", external: true },
+      { label: "Terms & Conditions", href: "/terms-and-conditions" },
+      { label: "Privacy Policy", href: "/privacy-policy" },
+      { label: "Disclaimer", href: "/disclaimer" },
     ],
   },
 ];

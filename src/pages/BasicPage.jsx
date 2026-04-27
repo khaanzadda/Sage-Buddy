@@ -32,13 +32,28 @@ export function BasicPage({ page }) {
             title={page.title}
             description={page.description}
           />
-          <p className="body-copy">
-            This page uses the same site shell, spacing system, buttons, and
-            card components as the homepage so new content can be added quickly.
-          </p>
-          <Link to="/" className="button button-primary">
-            Back to Home
-          </Link>
+          {page.sections ? (
+            page.sections.map((section) => (
+              <div key={section.title}>
+                <h2>{section.title}</h2>
+                {section.paragraphs.map((paragraph) => (
+                  <p key={paragraph} className="body-copy">
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            ))
+          ) : (
+            <>
+              <p className="body-copy">
+                This page uses the same site shell, spacing system, buttons, and
+                card components as the homepage so new content can be added quickly.
+              </p>
+              <Link to="/" className="button button-primary">
+                Back to Home
+              </Link>
+            </>
+          )}
         </div>
         <div className="page-sidebar">
           <h3>Ready-to-use blocks</h3>
